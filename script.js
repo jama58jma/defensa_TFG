@@ -44,3 +44,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
     updateSlides(); // Llama al método inicializador
 });
+
+/* ==========================================
+   CONTROL DE VÍDEO E INTERACCIÓN EN CANVAS
+   ========================================== */
+
+function playVideo() {
+    const video = document.getElementById('tfgVideo');
+    video.play();
+    mostrarEnCanvas(); 
+}
+
+function pausarVideo() {
+    const video = document.getElementById('tfgVideo');
+    video.pause();
+}
+
+function pararVideo() {
+    const video = document.getElementById('tfgVideo');
+    video.pause();
+    video.currentTime = 0; 
+   
+}
+
