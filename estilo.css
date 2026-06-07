@@ -19,7 +19,27 @@
     gap: 12px;           
 }
 
+.degree-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    border-left: 2px solid var(--border-color); 
+    padding-left: 20px; 
+}
+.degree-logo {
+    height: 30px;       
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px; 
+}
 
+.degree-tag {
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-left: none;  
+    padding-left: 0;
+}
 .header-logo {
     height: 40px;       
     width: auto;         
@@ -61,14 +81,6 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-}
-
-.degree-tag {
-    color: var(--text-muted);
-    font-weight: 600;
-    font-size: 0.95rem;
-    border-left: 2px solid var(--border-color);
-    padding-left: 15px;
 }
 
 .univ-tag {
