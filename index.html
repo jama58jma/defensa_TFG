@@ -141,7 +141,7 @@
                 </div>
             </div>
         </section>
-
+<!--3----------------------------------------------------------------------------------------------->
         <section class="slide"> 
             <div class="content">
                 <h2 class="slide-title">3. Proceso de modelado e iteraciones (Volante)</h2>
@@ -218,7 +218,7 @@
                 </div>
             </div>
         </section>
-
+<!--4--------------------------------------------------------------------------------------->
         <section class="slide">
             <div class="content">
                 <h2 class="slide-title">4. Exportar de Blender a Unity</h2>
@@ -268,8 +268,7 @@
                 </div>
             </div>
         </section>
-
-        
+<!--5-------------------------------------------------------------------------------------------->
 
         <section class="slide">
             <div class="content">
@@ -287,7 +286,8 @@
 
             </div>
         </section>
-        
+
+<!--6-------------------------------------------------------------------------------------------->    
     <section class="slide">
         <div class="content">
             <h2 class="slide-title">6. Arquitectura de Scripts</h2>
@@ -327,7 +327,44 @@
             </div>
         </div>
     </section>
-        <section class="slide">
+
+<!--7--------------------------------------------------------------------------------------------------->
+<section class="slide">
+    <div class="content">
+        <h2 class="slide-title">6. Arquitectura de Software</h2>
+        <p class="slide-subtitle">Flujo de datos bidireccional y modular en tiempo real</p>
+
+        <div class="diagrama-flujo">
+            
+            <div class="nodo-diagrama bloque-fisicas">
+                <div class="nodo-icono">🕹️</div>
+                <h3>ControladorF1</h3>
+                <p>Procesa Inputs del Teclado y aplica Físicas (WheelColliders)</p>
+            </div>
+
+            <div class="flecha-conector">➡️</div>
+
+            <div class="nodo-diagrama bloque-sensor">
+                <div class="nodo-icono">🏁</div>
+                <h3>Sensórica (Checkpoints)</h3>
+                <p>Garantiza el paso síncrono del jugador por el circuito</p>
+            </div>
+
+            <div class="flecha-conector">➡️</div>
+
+            <div class="nodo-diagrama bloque-manager">
+                <div class="nodo-icono">🧠</div>
+                <h3>GestionadorMenus</h3>
+                <p>Modula el Audio, refresca la UI y almacena la Telemetría</p>
+            </div>
+
+        </div>
+    </div>
+</section>       
+
+<!--8------------------------------------------------------------------------------------------------>
+
+<section class="slide">
             <div class="content">
                 <h2 class="slide-title">7. Simulación en Unity</h2>
                 <p class="slide-description">Demostración del comportamiento del monoplaza en el motor de juego:</p>
@@ -347,6 +384,9 @@
 
     </main>
 
+
+
+<!--9----------------------------------------------------------------------------------------------->
     <footer class="presentation-footer">
         <div class="footer-left">
             <p><strong>Autor:</strong> José Ángel Mercadillo</p>
