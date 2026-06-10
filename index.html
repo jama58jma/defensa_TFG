@@ -288,7 +288,45 @@
             </div>
         </section>
         
+    <section class="slide">
+        <div class="content">
+            <h2 class="slide-title">6. Arquitectura de Scripts</h2>
+            <p class="slide-subtitle">Desarrollo modular y gestión de físicas en Unity</p>
 
+            <div class="scripts-container">
+                
+                <div class="script-card">
+                    <h3>1. ControladorF1</h3>
+                    <span class="badge físicas">Físicas e Inmersión</span>
+                    <ul>
+                        <li><strong>WheelColliders:</strong> Suspensión, tracción y físicas avanzadas a alta velocidad.</li>
+                        <li><strong>Automoción Real:</strong> Dirección <em>Ackermann</em> y torque diferencial en curvas.</li>
+                        <li><strong>Feedback:</strong> Modulación de audio (pitch/volumen) y telemetría de velocidad.</li>
+                    </ul>
+                </div>
+
+                <div class="script-card">
+                    <h3>2. GestionadorMenus</h3>
+                    <span class="badge motor">Game Manager</span>
+                    <ul>
+                        <li><strong>Ciclo de Vida:</strong> Control de estados (Inicio, Pausa y Reanudación del sistema).</li>
+                        <li><strong>Telemetría:</strong> Cronómetro de precisión en milisegundos reales (<code>Time.deltaTime</code>).</li>
+                        <li><strong>Lógica Deportiva:</strong> Validación de vueltas y almacenamiento de récord personal.</li>
+                    </ul>
+                </div>
+
+                <div class="script-card">
+                    <h3>3. Checkpoint</h3>
+                    <span class="badge trigger">Sensores de Pista</span>
+                    <ul>
+                        <li><strong>OnTriggerEnter:</strong> Colisionadores invisibles que no frenan ni alteran el coche.</li>
+                        <li><strong>Filtro de Seguridad:</strong> Doble validación por etiqueta (<em>Player</em>) y nombre de objeto.</li>
+                        <li><strong>Modularidad:</strong> Comunicación directa e inyección de datos al Gestor de Menús.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
         <section class="slide">
             <div class="content">
                 <h2 class="slide-title">6. Simulación en Unity</h2>
