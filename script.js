@@ -43,6 +43,28 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     updateSlides(); // Llama al método inicializador
+
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("imgAmpliada");
+    const iteraciones = document.querySelectorAll(".img-container img");
+
+    iteraciones.forEach(function(img) {
+        img.style.cursor = "zoom-in"; 
+        
+        img.addEventListener("click", function(e) {
+            e.preventDefault();
+            e.stopPropagation(); 
+            
+            // Cambiamos el src antes de mostrarlo y añadimos la clase de la transición
+            modalImg.src = this.src;
+            modal.classList.add("show");
+        });
+    });
+
+    // Cerrar el modal quitando la clase de forma suave
+    modal.addEventListener("click", function() {
+        this.classList.remove("show");
+    });
 });
 
 /* ==========================================
@@ -64,6 +86,4 @@ function pararVideo() {
     const video = document.getElementById('tfgVideo');
     video.pause();
     video.currentTime = 0; 
-   
 }
-
