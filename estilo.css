@@ -535,3 +535,92 @@ p {
     color: #475569;
     margin-bottom: 0;
 }
+
+/* 2. Para pantallas muy pequeñas o smartphones (Optimizado para dar espacio al MAIN) */
+@media (max-width: 768px) {
+    
+    /* El header se vuelve una tira fina y oculta las etiquetas de texto largas para dejar espacio */
+    .presentation-header {
+        height: 50px !important; /* Reducimos el tamaño */
+        padding: 0 15px !important;
+        gap: 5px;
+    }
+
+    /* Ocultamos los textos largos que saturan el espacio en móviles */
+    .degree-tag, .univ-tag, .badge {
+        display: none !important;
+    }
+
+    /* Los logos se mantienen pero más pequeños y en la misma línea */
+    .header-left, .header-right {
+        gap: 8px;
+    }
+    
+    .degree-logo {
+        height: 20px !important;
+    }
+    
+    .header-logo {
+        height: 25px !important;
+    }
+
+    .degree-container {
+        border-left: none !important;
+        padding-left: 0 !important;
+    }
+
+    /* El footer también se vuelve una tira fina de 50px y prioriza los botones */
+    .presentation-footer {
+        height: 50px !important;
+        padding: 0 15px !important;
+        gap: 10px;
+    }
+
+    /* En móvil ocultamos el nombre del autor y tutor para que los botones respiren */
+    .footer-left, .footer-right {
+        display: none !important;
+    }
+
+    /* Centramos los botones del slider en el espacio disponible */
+    .footer-center {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .controls {
+        gap: 15px;
+        padding: 4px 12px;
+    }
+
+    /* EL MAIN RECUPERA SU TRONO: Ajustamos el lienzo para que use todo el espacio libre */
+    .content {
+        padding: 20px !important;
+        max-height: 72vh !important; /* Ahora el contenido tiene espacio de sobra para lucir */
+    }
+
+    /* Estructuras internas en una sola línea vertical */
+    .scripts-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .timeline-iteraciones {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+    }
+
+    /* Ajustes finales de texto e imágenes para que quepa todo dentro de la tarjeta */
+    .main-title {
+        font-size: 1.6rem !important;
+    }
+    
+    .slide-title {
+        font-size: 1.3rem !important;
+        margin-bottom: 15px;
+    }
+
+    .unity-image-container {
+        height: 180px !important;
+    }
+}
