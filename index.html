@@ -374,22 +374,86 @@
     </div>
 </section>       
 
-<!--8------------------------------------------------------------------------------------------------>
 
-<section class="slide">
+<!--8----------------------------------------------------------------------------->
+        <section class="slide">
+    <div class="content">
+        <h2 class="slide-title">8. Integración en Unity: Control y Físicas</h2>
+        <p class="slide-description">Separación nítida entre la representación estética y la simulación física en C# (ControladorF1):</p>
+        
+        <div class="timeline-iteraciones" style="grid-template-columns: repeat(2, 1fr); gap: 40px;">
+            
+            <div class="step-iteracion">
+                <div class="step-number">Físicas</div>
+                <div class="img-container" style="height: 280px;">
+                    <img src="imagenes/col 1.png" alt="Wheel Colliders y Rigidbody" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h3>Arquitectura física y Rigidbody</h3>
+                <p>Configuración del esqueleto invisible (WheelColliders y BoxColliders)</p>
+            </div>
+
+            <div class="step-iteracion">
+                <div class="step-number">Geometría de Impactos</div>
+                <div class="img-container" style="height: 280px;">
+                    <img src="imagenes/col 2.png" alt="Vista Cenital de Protecciones" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h3>Protecciones y Sincronización visual</h3>
+                <p>Implementación de BoxColliders externos independientes en las ruedas.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--9------------------------------------------------------------------------------------------->
+        <section class="slide">
             <div class="content">
-                <h2 class="slide-title">8. Simulación en Unity</h2>
-                <p class="slide-description">Demostración del comportamiento del monoplaza en el motor de juego:</p>
+                <h2 class="slide-title">9. Interfaz de Usuario (HUD) y Sistemas de Audio</h2>
+                <p class="slide-description">Gestión de datos de telemetría y control de estados de juego mediante el sistema Canvas (GestionadorMenus):</p>
+                
+                <div class="timeline-iteraciones" style="grid-template-columns: repeat(2, 1fr); gap: 40px;">
+                    <div class="step-iteracion">
+                        <div class="step-number">HUD</div>
+                        <div class="img-container" style="height: 280px;">
+                            <img src="imagenes/men 1.png" alt="Velocímetro" style="width: 100%; height: 100%; object-fit: cover;" >
+                        </div>
+                        <h3>Velocímetro Dinámico</h3>
+                        <p>Marcador conectado al Rigidbody que lee la velocidad real.</p>
+                    </div>
 
-                <div class="video-container-tfg">
-                    <video id="tfgVideo" src="videos/croma3.mp4" controls width="640" height="360"></video>
+                    <div class="step-iteracion">
+                        <div class="step-number">Menú</div>
+                        <div class="img-container" style="height: 280px;">
+                            <img src="imagenes/men 2.png" alt="Menú de Pausa" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h3>Control de Estados</h3>
+                        <p>Interfaz vinculada a funciones de Continuar, Reiniciar, Salir, y control de música y volumen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--10------------------------------------------------------------------------------------------->
+        <section class="slide">
+            <div class="content">
+                <h2 class="slide-title">10. Lógica de Carrera y Gameloop</h2>
+                <p class="slide-description">Estructura del bucle de juego interactivo mediante disparadores físicos en pista (Checkpoint):</p>
+                
+                <div class="timeline-iteraciones" style="grid-template-columns: repeat(1, 1fr); gap: 40px;">
+                    <div class="step-iteracion">
+                        <div class="step-number">Disparador</div>
+                        <div class="img-container" style="height: 280px;">
+                            <img src="imagenes/dis 1.png" alt="Checkpoints" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h3>OnTriggerEnter</h3>
+                        <p>Script independiente en cada sector que filtra por Tag ("Player") para detectar el coche y notificar su paso exacto.</p>
+                    </div>
+
                 </div>
             </div>
         </section>
 
         <section class="slide">
             <div class="content">
-                <h2 class="slide-title">7. Conclusiones</h2>
+                <h2 class="slide-title">11. Conclusiones</h2>
                 <p>El cierre y quiza mini video.</p>
             </div>
         </section>
