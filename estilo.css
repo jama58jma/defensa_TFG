@@ -1,6 +1,6 @@
 :root {
-    --bg-color: #f3f4f6;          /* Fondo gris ultra-claro y suave */
-    --slide-bg: #ffffff;          /* "Lienzo" blanco para las diapositivas */
+    --bg-color: #f3f4f6;          
+    --slide-bg: #ffffff;          
     --primary-color: #0f172a;     /* Azul oscuro casi negro para máxima legibilidad */
     --accent-color: #4f46e5;      /* Violeta/Índigo moderno muy estilo Canva/Tech */
     --text-muted: #64748b;        /* Gris para textos secundarios */
@@ -623,4 +623,16 @@ p {
     .unity-image-container {
         height: 180px !important;
     }
+}
+/*ENLACE*/
+.badge-link {
+    text-decoration: none; /* Quita el subrayado típico de los enlaces */
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+/* Efecto al pasar el ratón por encima (hover) */
+.badge-link:hover {
+    background-color: var(--accent-color) !important; /* Cambia al violeta/índigo tecnológico */
+    transform: translateY(-1px); /* Pequeño efecto de elevación */
 }
