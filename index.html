@@ -311,7 +311,7 @@
                     <span class="badge físicas">Físicas e Inmersión</span>
                     <ul>
                         <li><strong>WheelColliders:</strong> Suspensión, tracción y físicas avanzadas a alta velocidad.</li>
-                        <li><strong>Automoción Real:</strong> Dirección <em>Ackermann</em> y torque diferencial en curvas.</li>
+                        <li><strong>Automoción real:</strong> Dirección <em>Ackermann</em> y torque diferencial en curvas.</li>
                         <li><strong>Feedback:</strong> Modulación de audio (pitch/volumen) y telemetría de velocidad.</li>
                     </ul>
                 </div>
@@ -321,7 +321,7 @@
                     <ul>
                         <li><strong>Ciclo de Vida:</strong> Control de estados (Inicio, Pausa y Reanudación del sistema).</li>
                         <li><strong>Telemetría:</strong> Cronómetro de precisión en milisegundos reales (<code>Time.deltaTime</code>).</li>
-                        <li><strong>Lógica Deportiva:</strong> Validación de vueltas y almacenamiento de récord personal.</li>
+                        <li><strong>Lógica deportiva:</strong> Validación de vueltas y almacenamiento de récord personal.</li>
                     </ul>
                 </div>
                 <div class="script-card">
@@ -351,7 +351,7 @@
             <div class="nodo-diagrama bloque-fisicas">
                 <div class="nodo-icono">🕹️</div>
                 <h3>ControladorF1</h3>
-                <p>Procesa Inputs del Teclado y aplica Físicas (WheelColliders)</p>
+                <p>Procesa Inputs del teclado y aplica físicas (WheelColliders)</p>
             </div>
 
             <div class="flecha-conector">➡️</div>
@@ -359,7 +359,7 @@
             <div class="nodo-diagrama bloque-manager">
                 <div class="nodo-icono">🧠</div>
                 <h3>GestionadorMenus</h3>
-                <p>Modula el Audio, refresca la UI y almacena la Telemetría</p>
+                <p>Modula el audio, refresca la UI y almacena la telemetría</p>
             </div>
 
             <div class="flecha-conector">➡️</div>
@@ -379,7 +379,7 @@
         <section class="slide">
     <div class="content">
         <h2 class="slide-title">8. Integración en Unity: Control y físicas</h2>
-        <p class="slide-description">Separación nítida entre la representación estética y la simulación física en C# (ControladorF1):</p>
+        <p class="slide-description">Separación nítida entre la representación estética y la simulación física en (ControladorF1)</p>
         
         <div class="timeline-iteraciones" style="grid-template-columns: repeat(2, 1fr); gap: 40px;">
             
@@ -408,7 +408,7 @@
         <section class="slide">
             <div class="content">
                 <h2 class="slide-title">9. Interfaz de usuario</h2>
-                <p class="slide-description">Gestión de datos de telemetría y control de estados de juego mediante el sistema Canvas (GestionadorMenus):</p>
+                <p class="slide-description">Gestión de datos de telemetría y control de estados de juego mediante el sistema Canvas (GestionadorMenus)</p>
                 
                 <div class="timeline-iteraciones" style="grid-template-columns: repeat(2, 1fr); gap: 40px;">
                     <div class="step-iteracion">
@@ -435,7 +435,7 @@
         <section class="slide">
             <div class="content">
                 <h2 class="slide-title">10. Lógica de carrera y gameloop</h2>
-                <p class="slide-description">Estructura del bucle de juego interactivo mediante disparadores físicos en pista (Checkpoint):</p>
+                <p class="slide-description">Estructura del bucle de juego interactivo mediante disparadores físicos en pista (Checkpoint)</p>
                 
                 <div class="timeline-iteraciones" style="grid-template-columns: repeat(1, 1fr); gap: 40px;">
                     <div class="step-iteracion">
@@ -444,7 +444,7 @@
                     <img src="imagenes/dis 1.png" alt="Box Trigger en Escena" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <h3>Sistema de Checkpoints</h3>
-                <p>Uso de componentes Box Collider en modo "Is Trigger". El script detecta la entrada del vehículo filtrando por Tag y notifica el paso al gestor central.</p>
+                <p>Uso de componentes box collider en modo "Is Trigger". El script detecta la entrada del vehículo filtrando por Tag y notifica el paso al gestor central.</p>
 
                 </div>
             </div>
