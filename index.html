@@ -433,55 +433,70 @@
         </section>
 <!--10------------------------------------------------------------------------------------------->
         <section class="slide">
-            <div class="content">
-                <h2 class="slide-title">10. Lógica de carrera y gameloop</h2>
-                <p class="slide-description">Estructura del bucle de juego interactivo mediante disparadores físicos en pista (Checkpoint)</p>
-                
-                <div class="timeline-iteraciones" style="grid-template-columns: repeat(1, 1fr); gap: 40px;">
-                    <div class="step-iteracion">
-                        <div class="step-number">Disparador</div>
-                        <div class="img-container" style="height: 280px;">
+    <div class="content">
+        <h2 class="slide-title">10. Lógica de carrera y gameloop</h2>
+        <p class="slide-description">Estructura del bucle de juego interactivo y rendimiento del motor en tiempo real</p>
+        
+        <!-- Cambiamos a 2 columnas (repeat(2, 1fr)) para albergar el nuevo bloque de rendimiento -->
+        <div class="timeline-iteraciones" style="grid-template-columns: repeat(2, 1fr); gap: 30px;">
+            
+            <!-- Bloque 1: El Checkpoint original -->
+            <div class="step-iteracion">
+                <div class="step-number">Disparador</div>
+                <div class="img-container" style="height: 200px;">
                     <img src="imagenes/dis 1.png" alt="Box Trigger en Escena" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
-                <h3>Sistema de Checkpoints</h3>
-                <p>Uso de componentes box collider en modo "Is Trigger". El script detecta la entrada del vehículo filtrando por Tag y notifica el paso al gestor central.</p>
-
-                </div>
+                <h3>Sistema de checkpoints</h3>
+                <p>Uso de componentes Box Collider en modo "Is Trigger". El script detecta la entrada del vehículo filtrando por Tag y notifica el paso al gestor central.</p>
             </div>
-        </section>
+
+            <!-- Bloque 2: NUEVO - Captura de rendimiento (Stats) -->
+            <div class="step-iteracion">
+                <div class="step-number">Rendimiento</div>
+                <div class="img-container" style="height: 200px;">
+                    <!-- Referenciamos tu archivo de estadísticas exactamente por su nombre -->
+                    <img src="imagenes/fps.png" alt="Estadísticas de rendimiento en Unity" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h3>Optimización y tasa de frames</h3>
+                <p>Monitoreo del bucle a través del panel <em>Statistics</em>. Se alcanza un rendimiento estable superior a los 60 FPS estables.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
 
         <section class="slide">
-            <div class="content">
-                <h2 class="slide-title">11. Conclusiones y Trabajo Futuro</h2>
-                
-                <p style="margin-bottom: 20px;">
-                    El proyecto ha culminado con <strong>éxito</strong>, logrando un flujo de trabajo completo desde el modelado en Blender hasta la integración en Unity. Se ha desarrollado una experiencia interactiva, <strong>fiable y jugable</strong>, aunque el proceso no ha estado exento de desafíos y margen de mejora.
-                </p>
-
-                <div class="timeline-iteraciones" style="grid-template-columns: repeat(1, 1fr); gap: 30px; margin-top: 20px;">
+                <div class="content">
+                    <h2 class="slide-title">11. Conclusiones y posibles mejoras</h2>
                     
-                    <div style="text-align: left; background: #f8fafc; padding: 20px; border-radius: 12px; border: 1px solid var(--border-color);">
-                        <h3 style="color: var(--accent-color); font-size: 1.2rem; margin-bottom: 15px; font-weight: 700;">
-                            🚀 Líneas de Mejora Futura
-                        </h3>
-                        <ul class="styled-list" style="margin-top: 0;">
-                            <li style="font-size: 1.05rem; margin-bottom: 12px;">
-                                <strong>Físicas avanzadas:</strong> Optimizar los <em>Wheel Colliders</em> para eliminar por completo vibraciones residuales en parado (ajuste fino de <code>stiffness</code> y amortiguación).
-                            </li>
-                            <li style="font-size: 1.05rem; margin-bottom: 12px;">
-                                <strong>Detalles de la UI:</strong> Integrar el velocímetro digital directamente en la pantalla del volante al alternar a la cámara en primera persona (HUD inmersivo).
-                            </li>
-                            <li style="font-size: 1.05rem; margin-bottom: 12px;">
-                                <strong>Optimización de texturas:</strong> Corregir el sutil efecto de <em>bleeding</em> en el mapeado UV para un acabado visual perfecto.
-                            </li>
-                            <li style="font-size: 1.05rem; margin-bottom: 12px;">
-                                <strong>Contenido y Blender:</strong> Ampliar el catálogo de circuitos y refinar el modelo 3D en Blender tras haber asentado las bases del motor Unity.
-                            </li>
-                        </ul>
+                    <p style="margin-bottom: 20px;">
+                        El proyecto ha culminado con <strong>éxito</strong>, logrando un flujo de trabajo completo desde el modelado en Blender hasta la integración en Unity. Se ha desarrollado una experiencia interactiva, <strong>fiable y jugable</strong>, aunque el proceso no ha estado exento de desafíos y margen de mejora.
+                    </p>
+
+                    <div class="timeline-iteraciones" style="grid-template-columns: repeat(1, 1fr); gap: 30px; margin-top: 20px;">
+                        
+                        <div style="text-align: left; background: #f8fafc; padding: 20px; border-radius: 12px; border: 1px solid var(--border-color);">
+                            <h3 style="color: var(--accent-color); font-size: 1.2rem; margin-bottom: 15px; font-weight: 700;">
+                                🚀 Posibles mejoras
+                            </h3>
+                            <ul class="styled-list" style="margin-top: 0;">
+                                <li style="font-size: 1.05rem; margin-bottom: 12px;">
+                                    <strong>Físicas avanzadas:</strong> Optimizar los <em>wheel colliders</em> para eliminar por completo vibraciones residuales en parado (ajuste fino de <code>stiffness</code> y amortiguación).
+                                </li>
+                                <li style="font-size: 1.05rem; margin-bottom: 12px;">
+                                    <strong>Detalles de la interfaz:</strong> Integrar el velocímetro digital directamente en la pantalla del volante al alternar a la cámara en primera persona (cuadro de instrumentos inmersivo).
+                                </li>
+                                <li style="font-size: 1.05rem; margin-bottom: 12px;">
+                                    <strong>Optimización de texturas:</strong> Corregir el sutil efecto de <em>bleeding</em> en el mapeado UV para un acabado visual perfecto.
+                                </li>
+                                <li style="font-size: 1.05rem; margin-bottom: 12px;">
+                                    <strong>Contenido y modelado:</strong> Ampliar el catálogo de circuitos y refinar el modelo 3D en Blender tras haber asentado las bases del motor Unity.
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
        <section class="slide">
     <div class="content content-center">
