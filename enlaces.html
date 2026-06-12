@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargas y Recursos - TFG</title>
+    <link rel="icon" type="image/png" href="imagenes/F1_casi.png">
+    <style>
+        :root {
+            --bg-color: #f3f4f6;
+            --slide-bg: #ffffff;
+            --primary-color: #0f172a;
+            --accent-color: #4f46e5;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .download-card {
+            max-width: 600px;
+            width: 100%;
+            background: var(--slide-bg);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .download-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn-demo {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-demo:hover {
+            background-color: #1e293b;
+            transform: translateY(-2px);
+        }
+
+        .btn-github {
+            background-color: #24292e; /* Color oficial corporativo de GitHub */
+            color: white;
+        }
+
+        .btn-github:hover {
+            background-color: #2f363d;
+            transform: translateY(-2px);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive para móviles */
+        @media (max-width: 480px) {
+            .download-card { padding: 25px 20px; }
+            h1 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="download-card">
+        <h1>Recursos del Proyecto</h1>
+        <p class="subtitle">Modelado de Fórmula 1 e Integración en Unity</p>
+        
+        <div class="btn-container">
+            <a href="https://drive.google.com/file/d/1ujfuJdSvUtyh2Qdx06MRpclSZCAPOJ8X/view?usp=sharing" class="download-btn btn-demo" download>
+                🎮 Descargar Demo Ejecutable (.zip)
+            </a>
+
+            <a href="https://jama58jma.github.io/defensa_TFG/" target="_blank" class="download-btn btn-github">
+                💻 Ver Código en GitHub
+            </a>
+        </div>
+
+        <a href="javascript:window.close();" class="back-link">← Volver a la presentación</a>
+    </div>
+
+</body>
+</html>
